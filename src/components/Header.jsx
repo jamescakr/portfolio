@@ -6,22 +6,28 @@ const Header = () => {
     hidden: {},
     show: {
       transition: {
+        delayChildren: 0.8,
         staggerChildren: 0.1,
       },
     },
   };
-  // 현재 버튼에 모션이 적용 안되는상황. 코드는 작성완료했음
   const childVariants = {
     hidden: { opacity: 0, y: -50 },
     show: {
       opacity: 1,
       y: 0,
+      transition: { type: "spring", stiffness: 80, damping: 20 },
     },
   };
 
   return (
     <div className="fixed top-0 left-0 w-full bg-[#121212] text-[#ccc] text-[20px] flex justify-end h-auto">
-      <div className="flex h-auto mr-8 font-sf-mono">
+      <motion.div
+        variants={containerVariant}
+        initial="hidden"
+        animate="show"
+        className="flex h-auto mr-8 font-sf-mono"
+      >
         <motion.button
           variants={childVariants}
           className="px-4 py-6 w-auto hover:text-[#64FFDA]"
@@ -41,7 +47,7 @@ const Header = () => {
           Experience
         </motion.button>
         <motion.button
-          variant={childVariants}
+          variants={childVariants}
           className="px-4 py-6 w-auto hover:text-[#64FFDA]"
         >
           Projects
@@ -52,7 +58,7 @@ const Header = () => {
         >
           Contact
         </motion.button>
-      </div>
+      </motion.div>
     </div>
   );
 };

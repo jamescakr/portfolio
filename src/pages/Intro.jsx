@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import emailIcon from "../assets/email.png";
-import { Download } from "lucide-react";
+import { Download, FileUser } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Intro = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const containerVariant = {
     hidden: {},
     show: {
       transition: {
-        delayChildren: 1,
+        delayChildren: 1.8,
         staggerChildren: 0.1,
       },
     },
@@ -40,8 +42,8 @@ const Intro = () => {
           </motion.div>
           <motion.div variants={childVariants} className="text-6xl mb-12 font-inter">
             Web Developer specializing in
-            <span className="ml-2 font-bold bg-gradient-to-l from-[#009E75] to-[#64FFDA] text-transparent bg-clip-text">
-              ReactJS
+            <span className="ml-3 font-bold bg-gradient-to-r from-[#009E75] to-[#64FFDA] text-transparent bg-clip-text">
+              React
             </span>
           </motion.div>
           <motion.div
@@ -56,18 +58,41 @@ const Intro = () => {
           </motion.div>
 
           <motion.div variants={childVariants} className="flex w-128 gap-x-6">
-            <button className="border border-[#64FFDA] text-[#64FFDA] font-sf-mono rounded-md w-auto px-4 h-14 flex justify-center items-center text-xl animate-fadeInDown">
-              <Download className="mr-2 text-current" /> Resume
+            <button
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] text-xl rounded-md w-34 px-4 h-14 flex justify-center items-center"
+            >
+              {isHovered ? (
+                <Download className="w-22 h-8 animate__animated animate__zoomIn animate__faster" />
+              ) : (
+                <>
+                  <FileUser className="mr-2" />
+                  <span>Resume</span>
+                </>
+              )}
             </button>
             <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
               <img src={emailIcon} alt="email" className="w-7 h-7" />
             </button>
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
-              <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
-            </button>
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
-              <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
-            </button>
+            <a
+              href="https://www.linkedin.com/in/dev-james/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+                <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
+              </button>
+            </a>
+            <a
+              href="https://github.com/jamescakr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+                <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
+              </button>
+            </a>
           </motion.div>
         </motion.div>
       </div>
