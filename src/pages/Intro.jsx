@@ -35,12 +35,18 @@ const Intro = () => {
           variants={childVariants}
           className="mb-4 text-2xl text-[#64FFDA] font-sf-mono"
         >
-          Hi, my name is
+          Hello, my name is
         </motion.div>
-        <motion.div variants={childVariants} className="text-8xl mb-4 font-inter">
+        <motion.div
+          variants={childVariants}
+          className="text-8xl mb-4 font-inter font-bold"
+        >
           James Jo
         </motion.div>
-        <motion.div variants={childVariants} className="text-6xl mb-12 font-inter">
+        <motion.div
+          variants={childVariants}
+          className="text-6xl mb-12 font-inter font-extrabold"
+        >
           Web Developer specializing in
           <span className="ml-3 font-bold bg-gradient-to-r from-[#009E75] to-[#64FFDA] text-transparent bg-clip-text">
             React
@@ -48,11 +54,13 @@ const Intro = () => {
         </motion.div>
         <motion.div
           variants={childVariants}
-          className="w-3/4 h-auto text-2xl text-[#ccc] mb-10 font-lato"
+          className="w-3/4 h-auto text-2xl text-[#C0C0C0] mb-10 font-lato"
         >
           <div>
-            I have a strong foundation in HTML, CSS and JavaScript, and I’m expanding
-            my expertise with modern web technologies to build impactful solutions.
+            I have a strong foundation in{" "}
+            <span className="text-[#64FFDA]">HTML, CSS, JavaScript</span> and{" "}
+            <span className="text-[#64FFDA]">NodeJS</span>, and I’m expanding my
+            expertise with modern web technologies to build impactful solutions.
           </div>
         </motion.div>
 
@@ -63,9 +71,12 @@ const Intro = () => {
             className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] text-xl rounded-md w-34 px-4 h-14 flex justify-center items-center"
           >
             {isHovered ? (
-              <Download className="w-22 h-8 animate__animated animate__zoomIn animate__faster" />
+              <div className="w-34 h-8 animate__animated animate__zoomIn animate__faster flex items-center">
+                <Download className="mr-1" />
+                <span className="text-lg">Download</span>
+              </div>
             ) : (
-              <div className="animate__animated animate__fadeInUp animate__faster flex items-center">
+              <div className="animate__animated animate__fadeIn animate__faster flex items-center">
                 <FileUser className="mr-1" />
                 <span>Resume</span>
               </div>
