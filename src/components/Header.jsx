@@ -38,7 +38,7 @@ const Header = () => {
           variants={childVariants}
           className="px-4 py-6 w-auto hover:text-[#64FFDA]"
         >
-          Passion
+          Skills
         </motion.button>
         <motion.button
           variants={childVariants}

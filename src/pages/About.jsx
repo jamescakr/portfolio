@@ -24,9 +24,9 @@ const About = () => {
   ];
   return (
     <Layout paddingTop="pt-0">
-      <SectionHeader header="Background" />
+      <SectionHeader header="About Me" />
       <div className="grid grid-cols-1 md:grid-cols-10">
-        <div className="md:col-span-6 text-[20px] font-inter font-light text-[#C0C0C0] mr-10">
+        <div className="md:col-span-6 text-[20px] font-lato font-light text-[#C0C0C0] mr-10">
           <p className="pb-5">
             I'm a <span className=" text-white">full-stack developer</span> who
             strives to build well-structured applications while continuously learning
@@ -68,8 +68,8 @@ const About = () => {
             <span className="text-white">as a web developer</span> where I can apply
             my skills and continue to grow in a dynamic team environment.
           </p>
-          <p>Additional Key Points :</p>
-          <ul className="grid grid-rows-2 grid-flow-col gap-3 text-[17px] font-sf-mono mt-6">
+          <p className="text-white">Additional Key Points :</p>
+          <ul className="grid grid-rows-2 grid-flow-col gap-3 text-[17px] font-sf-mono mt-3">
             {items.map((item, index) => (
               <li key={index} className="flex items-center gap-x-3">
                 {item.icons}

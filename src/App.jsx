@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Intro from "./pages/Intro";
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <main className="pt-15">
         <Intro />
         <About />
+        <Skills />
       </main>
     </div>
   );
