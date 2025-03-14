@@ -10,6 +10,21 @@
   }
 }
 
+.custom-center {
+  @apply flex flex-col items-center justify-center gap-3;
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 20px rgba(0, 150, 136, 0.2);
+}
+
+.custom-shadow:hover {
+  box-shadow: 0 10px 40px rgba(100, 255, 218, 0.3);
+}
+.custom-box {
+  @apply rounded-lg w-34 h-34 transform hover:scale-105 hover:bg-gradient-to-r hover:from-white hover:to-[#64FFDA] hover:bg-clip-text hover:text-transparent transition duration-300;
+}
+
 .font-lato {
   font-family: "Lato", sans-serif;
 }
@@ -20,4 +35,8 @@
 
 .font-sf-mono {
   font-family: "SF Mono", monospace;
+}
+
+.font-mont {
+  font-family: "Montserrat", sans-serif;
 }
