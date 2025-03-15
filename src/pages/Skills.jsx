@@ -1,19 +1,18 @@
 import React from "react";
 import Layout from "../components/Layout";
 import SectionHeader from "../components/SectionHeader";
-import settingIcon from "../assets/setting.png";
-import toolIcon from "../assets/tool.png";
-import databaseIcon from "../assets/database.png";
+import { Cog } from "lucide-react";
+import { Wrench } from "lucide-react";
+import { DatabaseZap } from "lucide-react";
 
 const Skills = () => {
   return (
     <Layout paddingTop="pt-30">
       <SectionHeader header="Skills" />
       <div className="grid grid-cols-11">
-        {/* <div className="col-span-1"></div> */}
         <div className="col-span-5">
           <div className="flex justify-center items-center mb-10">
-            <img src={settingIcon} alt="setting icon" className="w-6 h-6 mr-2" />
+            <Cog className="w-6 h-6 mr-2 text-[#64FFDA]" />
             <span className="text-3xl font-mont font-semibold">DEVELOPMENT</span>
           </div>
           <ul className="grid grid-cols-3 grid-flow-row gap-y-10 place-items-center font-sf-mono text-xl">
@@ -106,7 +105,7 @@ const Skills = () => {
         <div className="col-span-5 flex flex-col gap-y-20">
           <div>
             <div className="flex justify-center items-center pb-10">
-              <img src={toolIcon} alt="tool icon" className="w-6 h-6 mr-2" />
+              <Wrench className="w-6 h-6 mr-2 text-[#64FFDA]" />
               <span className="text-3xl font-mont font-semibold">
                 TOOLS & UTILITIES
               </span>
@@ -138,7 +137,7 @@ const Skills = () => {
 
           <div>
             <div className="flex justify-center items-center pb-10">
-              <img src={databaseIcon} alt="database icon" className="w-6 h-6 mr-2" />
+              <DatabaseZap className="w-6 h-6 mr-2 text-[#64FFDA]" />
               <span className="text-3xl font-mont font-semibold">DATABASE</span>
             </div>
             <ul className="grid grid-cols-3 grid-flow-row font-sf-mono text-xl place-items-center">

@@ -10,6 +10,16 @@
   }
 }
 
+@layer utilities {
+  .text-responsive-lg {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+
+  .text-responsive-sm {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+}
+
 .custom-center {
   @apply flex flex-col items-center justify-center gap-3;
 }

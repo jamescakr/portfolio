@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Intro from "./pages/Intro";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Intro />
         <About />
         <Skills />
+        <Experience />
       </main>
     </div>
   );

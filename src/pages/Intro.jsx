@@ -33,19 +33,19 @@ const Intro = () => {
       <motion.div variants={containerVariant} initial="hidden" animate="show">
         <motion.div
           variants={childVariants}
-          className="mb-4 text-2xl text-[#64FFDA] font-sf-mono"
+          className="mb-4 text-base sm:text-xl text-[#64FFDA] font-sf-mono"
         >
           Hello, my name is
         </motion.div>
         <motion.div
           variants={childVariants}
-          className="text-8xl mb-4 font-inter font-bold"
+          className="font-inter font-bold text-responsive-lg"
         >
           James Jo
         </motion.div>
         <motion.div
           variants={childVariants}
-          className="text-6xl mb-12 font-inter font-extrabold"
+          className="mb-8 lg:mb-12 font-inter font-extrabold text-responsive-sm"
         >
           Web Developer specializing in
           <span className="ml-3 font-bold bg-gradient-to-r from-[#009E75] to-[#64FFDA] text-transparent bg-clip-text">
@@ -54,21 +54,21 @@ const Intro = () => {
         </motion.div>
         <motion.div
           variants={childVariants}
-          className="w-3/4 h-auto text-2xl text-[#C0C0C0] mb-10 font-lato"
+          className="max-w-3xl text-lg sm:text-xl lg:text-2xl text-[#C0C0C0] mb-10 font-lato"
         >
           <div>
             I have a strong foundation in{" "}
-            <span className="text-[#64FFDA]">HTML, CSS, JavaScript</span> and{" "}
-            <span className="text-[#64FFDA]">NodeJS</span>, and I’m expanding my
+            <span className="text-[#64FFDA]">HTML, CSS, JavaScript,</span> and{" "}
+            <span className="text-[#64FFDA]">NodeJS</span> while expanding my
             expertise with modern web technologies to build impactful solutions.
           </div>
         </motion.div>
 
-        <motion.div variants={childVariants} className="flex w-128 gap-x-6">
+        <motion.div variants={childVariants} className="flex flex-wrap gap-4">
           <button
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] text-xl rounded-md w-34 px-4 h-14 flex justify-center items-center"
+            className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] rounded-md px-4 py-2 text-base sm:px-6 sm:py-3 sm:text-lg md:text-xl"
           >
             {isHovered ? (
               <div className="w-34 h-8 animate__animated animate__zoomIn animate__faster flex items-center">
@@ -82,7 +82,7 @@ const Intro = () => {
               </div>
             )}
           </button>
-          <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+          <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
             <img src={emailIcon} alt="email" className="w-7 h-7" />
           </button>
           <a
@@ -90,7 +90,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
               <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
             </button>
           </a>
@@ -99,7 +99,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-14 h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
               <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
             </button>
           </a>
