@@ -64,7 +64,10 @@ const Intro = () => {
           </div>
         </motion.div>
 
-        <motion.div variants={childVariants} className="flex flex-wrap gap-4">
+        <motion.div
+          variants={childVariants}
+          className="flex flex-wrap gap-x-5 sm:gap-x-7"
+        >
           <button
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -82,7 +85,7 @@ const Intro = () => {
               </div>
             )}
           </button>
-          <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+          <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
             <img src={emailIcon} alt="email" className="w-7 h-7" />
           </button>
           <a
@@ -90,7 +93,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
               <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
             </button>
           </a>
@@ -99,7 +102,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl transform hover:scale-110 transition duration-300">
+            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
               <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
             </button>
           </a>
