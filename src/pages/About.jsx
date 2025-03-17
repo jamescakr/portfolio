@@ -79,7 +79,7 @@ const About = () => {
           </ul>
         </div>
         <img
-          src=""
+          src={null}
           alt="photo"
           className="md:col-span-4 ml-10 border border-[#C0C0C0] order-1 md:order-2"
         />

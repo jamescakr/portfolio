@@ -1,37 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
 import SectionHeader from "../components/SectionHeader";
-
-const experiences = [
-  {
-    title: "Nucamp Bootcamp",
-    date: "Mar - Nov 2024",
-    description:
-      "fullstack web developer course cafe finder web app cafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web app",
-    side: "left",
-  },
-  {
-    title: "Team project - Want Some Coffee",
-    date: "Jul 2024",
-    description:
-      "cafe finder web app cafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web app",
-    side: "right",
-  },
-  {
-    title: "Team Project - ExploreX",
-    date: "Sep 2024",
-    description:
-      "travel guide web app cafe finder web app cafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web app",
-    side: "left",
-  },
-  {
-    title: "Hackathon",
-    date: "Jan 2025",
-    description:
-      "time tracking web app cafe finder web app cafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web appcafe finder web app",
-    side: "right",
-  },
-];
+import ExpIconMap from "../utils/ExpIconMap";
+import { experiences } from "../utils/ExpData";
 
 const Experience = () => {
   return (
@@ -39,9 +10,9 @@ const Experience = () => {
       <SectionHeader header="Experience" />
       <div
         id="experience"
-        className="relative border-l-1 border-[#64FFDA] xl:border-l-0"
+        className="relative border-l-2 border-[#2F8F78] xl:border-l-0"
       >
-        <div className="hidden md:block absolute top-0 left-1/2 h-full xl:border-l-1 border-[#64FFDA]"></div>
+        <div className="hidden md:block absolute top-0 left-1/2 h-full xl:border-l-2 border-[#2F8F78]"></div>
         <div className="flex flex-col space-y-10 ml-10 xl:mr-10 w-auto">
           {experiences.map((exp, index) => (
             <div
@@ -52,11 +23,30 @@ const Experience = () => {
                   : "xl:justify-end xl:ml-32"
               }`}
             >
-              <div className="relative bg-[#1A1A1A] rounded-xs h-auto w-full xl:max-w-[50%] p-8 mb-10 custom-shadow">
+              <div className="relative bg-[#1A1A1A] rounded-xs h-auto w-full xl:max-w-[50%] p-8 mb-10 custom-shadow transition duration-300 group">
                 <div className="text-xl sm:text-2xl pb-10 font-sf-mono">
                   {exp.title}
                 </div>
                 <div className="text-lg sm:text-xl font-lato">{exp.description}</div>
+                <div className="hidden xl:block">
+                  {exp.side === "left" && (
+                    <div className="absolute top-1/2 -right-24 transform -translate-y-1/2">
+                      {ExpIconMap[exp.icon]}
+                    </div>
+                  )}
+                  {exp.side === "right" && (
+                    <div className="absolute top-1/2 -left-23 transform -translate-y-1/2">
+                      {ExpIconMap[exp.icon]}
+                    </div>
+                  )}
+                </div>
+
+                {/* For responsive : if screen is less than XL */}
+                <div className="block xl:hidden">
+                  <div className="absolute top-1/2 -left-18 transform -translate-y-1/2">
+                    {ExpIconMap[exp.icon]}
+                  </div>
+                </div>
               </div>
             </div>
           ))}

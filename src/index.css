@@ -25,14 +25,18 @@
 }
 
 .custom-shadow {
-  box-shadow: 0 10px 20px rgba(0, 150, 136, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 150, 136, 0.3);
 }
 
 .custom-shadow:hover {
-  box-shadow: 0 10px 40px rgba(100, 255, 218, 0.6);
+  box-shadow: 0 10px 40px rgba(100, 255, 218, 0.5);
 }
 .custom-box {
   @apply rounded-lg w-28 h-28 sm:w-34 sm:h-34 sm:transform hover:scale-105 hover:bg-gradient-to-r hover:from-white hover:to-[#64FFDA] hover:bg-clip-text hover:text-transparent transition duration-300 bg-[#1A1A1A];
+}
+
+.custom-hover {
+  @apply bg-[#1A1A1A] w-15 h-15 rounded-full flex justify-center items-center group-hover:bg-[#2F8F78] transition duration-300;
 }
 
 .font-lato {
