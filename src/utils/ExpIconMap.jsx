@@ -1,4 +1,4 @@
-import { GraduationCap, Trophy, Aperture } from "lucide-react";
+import { GraduationCap, Trophy, Users, UserRoundPen } from "lucide-react";
 
 export const ExpIconMap = {
   graduation: (
@@ -11,9 +11,16 @@ export const ExpIconMap = {
       <Trophy className="w-10 h-10" />
     </div>
   ),
-  project: (
+  team: (
     <div className="custom-hover">
-      <Aperture className="w-10 h-10" />
+      <Users className="w-10 h-10" />
+    </div>
+  ),
+  solo: (
+    <div className="custom-hover">
+      <UserRoundPen className="w-10 h-10" />
     </div>
   ),
 };
+
+export default ExpIconMap;
