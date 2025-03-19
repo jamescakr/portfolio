@@ -33,6 +33,14 @@ export const experiences = [
     icon: "award",
   },
   {
+    highlight: "Solo",
+    title: "Solo Project - Netflix Clone",
+    date: "DEC - FEB 2024/25",
+    description: "netflix clone with tailwind",
+    side: "right",
+    icon: "solo",
+  },
+  {
     highlight: "Team",
     highlight2: "Hackathon",
     title: "Time tracker",
@@ -40,14 +48,6 @@ export const experiences = [
     description: "time tracking web app",
     side: "left",
     icon: "team",
-  },
-  {
-    highlight: "Solo",
-    title: "Solo Project - Netflix Clone",
-    date: "DEC - FEB 2024/25",
-    description: "netflix clone with tailwind",
-    side: "right",
-    icon: "solo",
   },
   {
     highlight: "Solo",

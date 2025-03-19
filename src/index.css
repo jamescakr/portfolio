@@ -36,7 +36,7 @@
 }
 
 .custom-hover {
-  @apply bg-[#1A1A1A] w-15 h-15 rounded-full flex justify-center items-center group-hover:bg-[#2F8F78] transition duration-300;
+  @apply bg-[#1A1A1A] w-15 h-15 rounded-full flex justify-center items-center group-hover:bg-[#3FC9A8] transition duration-300;
 }
 
 .font-lato {

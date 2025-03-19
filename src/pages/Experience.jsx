@@ -16,9 +16,9 @@ const Experience = () => {
       <SectionHeader header="Experience" />
       <div
         id="experience"
-        className="relative border-l-2 border-[#2F8F78] xl:border-l-0"
+        className="relative border-l-2 border-[#64FFDA] xl:border-l-0"
       >
-        <div className="hidden md:block absolute top-0 left-1/2 h-full xl:border-l-2 border-[#2F8F78]"></div>
+        <div className="hidden md:block absolute top-0 left-1/2 h-full xl:border-l-2 border-[#64FFDA]"></div>
         <div className="flex flex-col space-y-10 ml-10 xl:mr-10 w-auto">
           {experiences.map((exp, index) => (
             <div
@@ -29,7 +29,7 @@ const Experience = () => {
                   : "xl:justify-end xl:ml-32"
               }`}
             >
-              <div className="relative bg-[#1A1A1A] rounded-xs h-auto w-full xl:max-w-[50%] p-8 mb-10 custom-shadow transition duration-300 group">
+              <div className="relative bg-[#1A1A1A] rounded-xs h-auto w-full xl:max-w-[50%] p-8 mb-10 custom-shadow transition duration-200 group">
                 {exp.highlight && (
                   <div className="flex">
                     <div
