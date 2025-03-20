@@ -68,7 +68,9 @@ const About = () => {
             <span className="text-white">as a web developer</span> where I can apply
             my skills and continue to grow in a dynamic team environment.
           </p>
-          <p className="text-white text-xl lg:text-2xl">Additional Key Points :</p>
+          <p className="text-xl lg:text-2xl font-medium text-white pl-2 border-b w-51 lg:w-60 rounded-xl">
+            Additional Key Points
+          </p>
           <ul className="grid grid-rows-2 grid-flow-col gap-5 lg:gap-x-7 text-base lg:text-lg font-sf-mono mt-3">
             {items.map((item, index) => (
               <li key={index} className="flex items-center gap-x-3">
