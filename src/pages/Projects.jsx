@@ -11,7 +11,7 @@ const Projects = () => {
         <div
           id="projects"
           key={index}
-          className="relative group mx-auto w-full max-w-[500px] sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px]"
+          className="relative group mx-auto w-full max-w-[500px] sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] 2xl:max-w-[1200px]"
         >
           <img
             src={project.img}
@@ -41,7 +41,7 @@ const Projects = () => {
             {project.skills.map((skill, index) => (
               <div
                 key={index}
-                className="inline-block w-auto h-auto bg-gray-800 rounded-md px-3 py-1 mr-2 text-[#64FFDA] text-sm md:text-base lg:text-lg mb-3"
+                className="inline-block w-auto h-auto bg-gray-800 rounded-md px-3 py-1 mr-2 text-[#64FFDA] text-sm lg:text-base mb-3"
               >
                 {skill}
               </div>
@@ -51,7 +51,7 @@ const Projects = () => {
             {project.api.map((api, index) => (
               <div
                 key={index}
-                className="inline-block w-auto h-auto bg-[#2C3E50] rounded-md px-3 py-1 mr-2 text-[#64FFDA] text-sm md:text-base lg:text-lg"
+                className="inline-block w-auto h-auto bg-zinc-800	rounded-md px-3 py-1 mr-2 text-[#64FFDA] text-sm lg:text-base"
               >
                 {api}
               </div>
