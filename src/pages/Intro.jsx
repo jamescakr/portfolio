@@ -74,12 +74,12 @@ const Intro = () => {
             className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] rounded-md px-4 py-2 text-base sm:px-6 sm:py-3 sm:text-lg md:text-xl"
           >
             {isHovered ? (
-              <div className="w-34 h-8 animate__animated animate__zoomIn animate__faster flex items-center">
+              <div className="flex justify-center items-center w-28 h-8 animate__animated animate__zoomIn animate__faster">
                 <Download className="mr-1" />
                 <span className="text-lg">Download</span>
               </div>
             ) : (
-              <div className="animate__animated animate__fadeIn animate__faster flex items-center">
+              <div className="flex justify-center items-center w-28 h-8 animate__animated animate__fadeIn animate__faster ">
                 <FileUser className="mr-1" />
                 <span>Resume</span>
               </div>

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import SectionHeader from "../components/SectionHeader";
 import { projects } from "../utils/ProjectData";
+import { ExternalLink } from "lucide-react";
 
 const Projects = () => {
+  const [isDemoHovered, setIsDemoHovered] = useState(false);
+  const [isGithubHovered, setIsGithubHovered] = useState(false);
+
   return (
     <Layout paddingTop="pt-50">
       <SectionHeader header="Projects" />
@@ -16,7 +20,7 @@ const Projects = () => {
           <img
             src={project.img}
             alt={project.title}
-            className="block mx-auto border border-none rounded-xl w-full h-auto mt-30 mb-15"
+            className="block mx-auto border border-none rounded-xl w-full h-auto mb-15"
           />
           <img
             src={project.video}
@@ -28,15 +32,46 @@ const Projects = () => {
               {project.title}
             </div>
             <div className="flex justify-end lg:pr-5 gap-x-3 lg:gap-x-7 text-base md:text-lg lg:text-xl font-sf-mono text-[#64FFDA]">
-              <button className="inline-block w-18 md:w-20 lg:w-22 h-10 md:h-12 lg:h-14 px-3  rounded-md border-1 border-[#64FFDA]">
-                Demo
-              </button>
-              <button className="inline-block w-22 md:w-26 lg:w-30 h-10 md:h-12 lg:h-14 px-3  rounded-md border-1 border-[#64FFDA]">
-                Github
-              </button>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center w-18 md:w-20 lg:w-22 h-10 md:h-12 lg:h-14 px-3 rounded-md border-1 border-[#64FFDA] "
+                onMouseEnter={() => setIsDemoHovered(true)}
+                onMouseLeave={() => setIsDemoHovered(false)}
+              >
+                {isDemoHovered ? (
+                  <ExternalLink className="animate__animated animate__zoomIn animate__faster" />
+                ) : (
+                  <span className="animate__animated animate__fadeIn animate__faster">
+                    Demo
+                  </span>
+                )}
+              </a>
+
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex justify-center items-center w-22 md:w-26 lg:w-30 h-10 md:h-12 lg:h-14 px-3  rounded-md border-1 border-[#64FFDA]"
+                onMouseEnter={() => {
+                  setIsGithubHovered(true);
+                }}
+                onMouseLeave={() => {
+                  setIsGithubHovered(false);
+                }}
+              >
+                {isGithubHovered ? (
+                  <ExternalLink className="animate__animated animate__zoomIn animate__faster" />
+                ) : (
+                  <span className="animate__animated animate__fadeIn animate__faster">
+                    Github
+                  </span>
+                )}
+              </a>
             </div>
           </div>
-          <p>{project.description}</p>
+          <p className="text-xl font-lato font-light mb-10">{project.description}</p>
           <div>
             {project.skills.map((skill, index) => (
               <div
@@ -57,7 +92,9 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <div className="flex-grow h-px w-1/2 bg-gradient-to-r from-[#64FFDA] via-white to-black mt-40"></div>
+          {index < projects.length - 1 && (
+            <div className="flex-grow h-px w-1/2 bg-gradient-to-r from-[#64FFDA] via-white to-black mt-40 mb-40"></div>
+          )}
         </div>
       ))}
     </Layout>

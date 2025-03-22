@@ -64,7 +64,7 @@ export const experiences = [
   },
   {
     highlight: "Solo",
-    title: "Portfolio WEBSITE",
+    title: "Portfolio Website",
     subtitle: "Personal Branding & Responsive Design",
     date: "MAR 2025",
     description:

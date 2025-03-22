@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full bg-[#121212] text-[#ccc] text-base sm:text-lg lg:text-xl flex justify-end h-20">
+    <div className="fixed top-0 left-0 w-full bg-[#121212] text-[#ccc] text-base sm:text-lg lg:text-xl flex justify-end h-20 z-50">
       <motion.div
         variants={containerVariant}
         initial="hidden"
