@@ -20,6 +20,11 @@
   }
 }
 
+html,
+body {
+  background-color: #121212;
+}
+
 .custom-center {
   @apply flex flex-col items-center justify-center gap-3;
 }

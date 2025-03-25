@@ -86,7 +86,16 @@ const Intro = () => {
             )}
           </button>
           <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
-            <img src={emailIcon} alt="email" className="w-7 h-7" />
+            <img
+              src={emailIcon}
+              alt="email"
+              className="w-7 h-7"
+              onClick={() =>
+                window.open(
+                  "mailto:dev.jamesjo@gmail.com?subject=Portfolio%20Contact&body=Hi%20James,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20wanted%20to%20reach%20out%20regarding%20[your%20topic%20here]%0D%0A%0D%0ABest%2C%0D%0A[your%20name]"
+                )
+              }
+            />
           </button>
           <a
             href="https://www.linkedin.com/in/dev-james/"

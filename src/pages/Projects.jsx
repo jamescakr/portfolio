@@ -32,6 +32,16 @@ const Projects = () => {
               {project.title}
             </div>
             <div className="flex justify-end lg:pr-5 gap-x-3 lg:gap-x-7 text-base md:text-lg lg:text-xl font-sf-mono text-[#64FFDA]">
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center items-center w-22 md:w-26 lg:w-30 h-10 md:h-12 lg:h-14 px-3  rounded-md border-1 border-[#64FFDA]"
+                >
+                  Youtube
+                </a>
+              )}
               <a
                 href={project.demo}
                 target="_blank"
@@ -71,7 +81,20 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <p className="text-xl font-lato font-light mb-10">{project.description}</p>
+          <p className="text-lg md:text-xl text-[#C0C0C0] font-lato font-light mb-10">
+            {Array.isArray(project.description)
+              ? project.description.map((text, i) => (
+                  <span key={i}>
+                    {i === 1 ? (
+                      <span className="font-normal text-white">{text}</span>
+                    ) : (
+                      text
+                    )}{" "}
+                  </span>
+                ))
+              : project.description}
+          </p>
+
           <div>
             {project.skills.map((skill, index) => (
               <div
