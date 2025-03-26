@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import { Box } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
-import photo from "../assets/photo.png";
-import photo2 from "../assets/photo2.png";
+import photo from "../assets/photo.webp";
+import photo2 from "../assets/photo2.webp";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
