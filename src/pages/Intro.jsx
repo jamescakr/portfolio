@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import emailIcon from "../assets/email.png";
-import { Download, FileUser } from "lucide-react";
+import { Download, FileUser, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
+import ResumePDF from "../../public/resume_jamesjo.pdf";
 
 const Intro = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -64,27 +65,31 @@ const Intro = () => {
           </div>
         </motion.div>
 
+        {/* buttons */}
         <motion.div
           variants={childVariants}
           className="flex flex-wrap gap-x-5 sm:gap-x-7"
         >
-          <button
+          <a
+            href={ResumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] rounded-md px-4 py-2 text-base sm:px-6 sm:py-3 sm:text-lg md:text-xl"
           >
             {isHovered ? (
-              <div className="flex justify-center items-center w-28 h-8 animate__animated animate__zoomIn animate__faster">
-                <Download className="mr-1" />
-                <span className="text-lg">Download</span>
+              <div className="flex justify-center items-center w-24 h-8 animate__animated animate__zoomIn animate__faster">
+                <ExternalLink className="w-8 h-8" />
+                <span className="text-base"></span>
               </div>
             ) : (
-              <div className="flex justify-center items-center w-28 h-8 animate__animated animate__fadeIn animate__faster ">
+              <div className="flex justify-center items-center w-24 h-8 animate__animated animate__fadeIn animate__faster ">
                 <FileUser className="mr-1" />
                 <span>Resume</span>
               </div>
             )}
-          </button>
+          </a>
           <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
             <img
               src={emailIcon}

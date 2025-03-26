@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { Box } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
-
+import photo from "../assets/photo.png";
 const About = () => {
   const items = [
     {
@@ -25,8 +25,8 @@ const About = () => {
   return (
     <Layout paddingTop="pt-30">
       <SectionHeader header="About Me" />
-      <div id="about" className="grid grid-cols-1 md:grid-cols-10">
-        <div className="md:col-span-6 text-xl lg:text-2xl font-lato font-light text-[#C0C0C0] ml-3 mr-3 order-2 md:order-1">
+      <div id="about" className="grid grid-cols-1 lg:grid-cols-10">
+        <div className="lg:col-span-6 text-xl lg:text-2xl font-lato font-light text-[#C0C0C0] ml-3 mr-3 order-2 lg:order-1">
           <p className="pb-5">
             I'm a <span className=" text-white">full-stack developer</span> who
             strives to build well-structured applications while continuously learning
@@ -81,9 +81,9 @@ const About = () => {
           </ul>
         </div>
         <img
-          src={null}
+          src={photo}
           alt="photo"
-          className="md:col-span-4 ml-10 border border-[#C0C0C0] order-1 md:order-2"
+          className="w-80 md:w-100 lg:w-120 h-auto mx-auto lg:col-span-4 order-1 lg:order-2 pb-10"
         />
       </div>
     </Layout>
