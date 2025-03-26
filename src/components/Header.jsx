@@ -74,7 +74,10 @@ const Header = () => {
           <ListCheck className="w-12 h-12 text-[#64FFDA]" />
         </div>
         {menuOpen && (
-          <MobileMenu menuItems={menuItems} closeMenu={() => setMenuOpen(false)} />
+          <div className="fixed inset-0 z-50" onClick={()=> setMenuOpen(false)}>
+             <MobileMenu menuItems={menuItems} closeMenu={() => setMenuOpen(false)} />
+          </div>
+         
         )}
       </div>
     </div>

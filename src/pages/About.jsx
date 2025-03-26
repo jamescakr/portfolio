@@ -30,7 +30,7 @@ const About = () => {
     <Layout paddingTop="pt-30">
       <SectionHeader header="About Me" />
       <div id="about" className="grid grid-cols-1 lg:grid-cols-10">
-        <div className="lg:col-span-6 text-xl lg:text-2xl font-lato font-light text-[#C0C0C0] ml-3 mr-3 order-2 lg:order-1">
+        <div className="lg:col-span-6 text-lg md:text-xl lg:text-2xl font-lato font-light text-[#C0C0C0] md:ml-3 md:mr-3 order-2 lg:order-1">
           <p className="pb-5">
             I'm a <span className=" text-white">full-stack developer</span> who
             strives to build well-structured applications while continuously learning

@@ -25,7 +25,7 @@ export const projects = [
     video: ExploreX,
     demo: "https://explorex-9.netlify.app/",
     github: "https://github.com/ExploreX-App/ExploreX?tab=readme-ov-file",
-    title: "ExploreX 🥉",
+    title: "ExploreX",
     description: [
       "A hotel and activity booking platform built during a one-week team competition. I led the team as Scrum Master, managing workflow and coordinating via GitHub Projects and Slack.",
       "Our team placed 3rd out of 10 teams, and the project was featured in a YouTube video by a Korean developer & coding instructor. This success was especially meaningful because I applied lessons from my first team project,",

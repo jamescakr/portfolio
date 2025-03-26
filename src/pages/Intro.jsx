@@ -76,21 +76,21 @@ const Intro = () => {
             rel="noopener noreferrer"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] rounded-md px-4 py-2 text-base sm:px-6 sm:py-3 sm:text-lg md:text-xl"
+            className="font-sf-mono bg-transparent border border-[#64FFDA] text-[#64FFDA] rounded-md px-3 sm:px-6 py-2 text-base  sm:py-3 sm:text-lg md:text-xl"
           >
             {isHovered ? (
-              <div className="flex justify-center items-center w-24 h-8 animate__animated animate__zoomIn animate__faster">
-                <ExternalLink className="w-8 h-8" />
+              <div className="flex justify-center items-center w-20 h-6 sm:w-24 sm:h-8 animate__animated animate__zoomIn animate__faster">
+                <ExternalLink className="w-6 h-6" />
                 <span className="text-base"></span>
               </div>
             ) : (
-              <div className="flex justify-center items-center w-24 h-8 animate__animated animate__fadeIn animate__faster ">
+              <div className="flex justify-center items-center w-20 h-6 sm:w-24 sm:h-8 animate__animated animate__fadeIn animate__faster ">
                 <FileUser className="mr-1" />
                 <span>Resume</span>
               </div>
             )}
           </a>
-          <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
+          <button className="border border-[#ccc] bg-[#ccc] rounded-md w-10 h-10 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
             <img
               src={emailIcon}
               alt="email"
@@ -107,7 +107,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
+            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-10 h-10 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
               <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
             </button>
           </a>
@@ -116,7 +116,7 @@ const Intro = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-12 h-12 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
+            <button className="border border-[#ccc] bg-[#ccc] rounded-md w-10 h-10 sm:w-14 sm:h-14 flex justify-center items-center text-xl sm:transform sm:hover:scale-110 transition duration-300">
               <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
             </button>
           </a>

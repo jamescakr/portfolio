@@ -39,13 +39,13 @@ const Experience = () => {
                     <div
                       className={`${
                         highlightBg[exp.highlight] || ""
-                      } inline-block w-auto h-auto rounded-xl px-2 mb-3 font-semibold text-lg lg:text-xl`}
+                      } inline-block w-auto h-auto rounded-xl px-2 mb-3 font-semibold text-base lg:text-xl`}
                     >
                       {exp.highlight}
                     </div>
                     <div>
                       {exp.highlight2 && (
-                        <span className="ml-2 inline-block bg-[#24A187] w-auto h-auto rounded-xl px-2 font-semibold text-lg lg:text-xl">
+                        <span className="ml-2 inline-block bg-[#24A187] w-auto h-auto rounded-xl px-2 font-semibold text-base lg:text-xl">
                           {exp.highlight2}
                         </span>
                       )}
@@ -55,13 +55,13 @@ const Experience = () => {
                 <div className="text-xl sm:text-2xl pb-2 font-mont font-semibold">
                   {exp.title}
                 </div>
-                <div className="text-xl pb-8 text-[#64FFDA] font-sf-mono">
+                <div className="text-base sm:text-xl pb-4 md:pb-8 text-[#64FFDA] font-sf-mono">
                   {exp.subtitle}
                 </div>
-                <div className="text-lg sm:text-xl font-lato font-light text-[#C0C0C0]">
+                <div className="text-base sm:text-xl font-lato font-light text-[#C0C0C0]">
                   {exp.description}
                 </div>
-                <div className="block xl:hidden mt-5 font-mont text-lg text-gray-400">
+                <div className="block xl:hidden mt-5 font-mont text-base sm:text-lg text-gray-400">
                   {exp.date}
                 </div>
                 <div className="hidden xl:block">

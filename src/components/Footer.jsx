@@ -12,7 +12,7 @@ const Footer = () => {
       </Link>
 
       <div className="flex justify-center items-center text-md font-sf-mono font-light pt-5">
-        <span className="text-2xl font-light mr-2">©</span> James Jo 2025
+        <span className="text-xl sm:text-2xl font-light mr-2">©</span> James Jo 2025
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ body {
   box-shadow: 0 10px 40px rgba(100, 255, 218, 0.5);
 }
 .custom-box {
-  @apply rounded-lg w-28 h-28 sm:w-34 sm:h-34 sm:transform hover:scale-105 hover:bg-gradient-to-r hover:from-white hover:to-[#64FFDA] hover:bg-clip-text hover:text-transparent transition duration-300 bg-[#1A1A1A];
+  @apply rounded-lg w-26 h-26 sm:w-34 sm:h-34 sm:transform hover:scale-105 hover:bg-gradient-to-r hover:from-white hover:to-[#64FFDA] hover:bg-clip-text hover:text-transparent transition duration-300 bg-[#1A1A1A];
 }
 
 .custom-hover {

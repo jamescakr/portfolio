@@ -18,7 +18,7 @@ const Skills = () => {
               DEVELOPMENT
             </span>
           </div>
-          <ul className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-3 grid-flow-row gap-y-10 place-items-center font-sf-mono text-xl text-center">
+          <ul className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 grid-flow-row gap-y-10 place-items-center font-sf-mono text-xl text-center">
             {developmentData.map((item, index) => (
               <li key={index} className="custom-center custom-shadow custom-box">
                 <img
@@ -26,7 +26,7 @@ const Skills = () => {
                   className="w-12 h-12 sm:w-16 sm:h-16"
                   alt={item.alt}
                 />
-                <span className="text-lg sm:text-xl">{item.alt}</span>
+                <span className="text-base sm:text-lg">{item.alt}</span>
               </li>
             ))}
           </ul>
