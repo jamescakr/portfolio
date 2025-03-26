@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/Layout";
 import { Box } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
 import photo from "../assets/photo.png";
+import photo2 from "../assets/photo2.png";
+
 const About = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const items = [
     {
       icons: <Box className="text-[#64FFDA] w-3 h-3" />,
@@ -80,11 +84,15 @@ const About = () => {
             ))}
           </ul>
         </div>
-        <img
-          src={photo}
-          alt="photo"
-          className="w-80 md:w-100 lg:w-120 h-auto mx-auto lg:col-span-4 order-1 lg:order-2 pb-10"
-        />
+        <span className="lg:col-span-4 order-1 lg:order-2 mb-10">
+          <img
+            src={isHovered ? photo2 : photo}
+            alt="photo"
+            className="w-80 md:w-100 lg:w-120 h-auto mx-auto"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
+        </span>
       </div>
     </Layout>
   );
