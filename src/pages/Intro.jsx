@@ -5,7 +5,6 @@ import emailIcon from "../assets/email.png";
 import { Download, FileUser, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import Layout from "../components/Layout";
-import ResumePDF from "../../public/resume_jamesjo.pdf";
 
 const Intro = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -71,7 +70,7 @@ const Intro = () => {
           className="flex flex-wrap gap-x-5 sm:gap-x-7"
         >
           <a
-            href={ResumePDF}
+            href="/resume_jamesjo.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => setIsHovered(true)}
