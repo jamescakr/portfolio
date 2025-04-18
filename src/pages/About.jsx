@@ -86,7 +86,7 @@ const About = () => {
         </div>
         <span className="lg:col-span-4 order-1 lg:order-2 mb-10">
           <img
-            src={isHovered ? photo2 : photo}
+            src={isHovered ? photo : photo2}
             alt="photo"
             className="w-80 md:w-100 lg:w-120 h-auto mx-auto"
             onMouseEnter={() => setIsHovered(true)}

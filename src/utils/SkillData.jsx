@@ -16,6 +16,10 @@ export const developmentData = [
     alt: "React",
   },
   {
+    src: "https://user-images.githubusercontent.com/958486/218346783-72be5ae3-b953-4dd7-b239-788a882fdad6.svg",
+    alt: "Zustand",
+  },
+  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg",
     alt: "React Router",
   },

@@ -57,7 +57,7 @@ const Intro = () => {
           className="max-w-3xl text-lg sm:text-xl lg:text-2xl text-[#C0C0C0] mb-10 font-lato"
         >
           <div>
-            I have a strong foundation in{" "}
+            I have a hands-on experience with{" "}
             <span className="text-[#64FFDA]">HTML, CSS, JavaScript,</span> and{" "}
             <span className="text-[#64FFDA]">NodeJS</span> while expanding my
             expertise with modern web technologies to build impactful solutions.
