@@ -89,19 +89,17 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <p className="text-lg md:text-xl text-[#C0C0C0] font-lato font-light mb-10">
-            {Array.isArray(project.description)
-              ? project.description.map((text, i) => (
-                  <span key={i}>
-                    {i === 1 ? (
-                      <span className="font-normal text-white">{text}</span>
-                    ) : (
-                      text
-                    )}{" "}
-                  </span>
-                ))
-              : project.description}
-          </p>
+          <div className="text-lg md:text-xl text-[#C0C0C0] font-lato font-light mb-10">
+            {project.description.map((text, i) =>
+              typeof text === "string" ? (
+                <span key={i}>{text}</span>
+              ) : (
+                <span key={i} className="font-bold">
+                  {text.highlight}
+                </span>
+              )
+            )}
+          </div>
 
           <div>
             {project.skills.map((skill, index) => (
