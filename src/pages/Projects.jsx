@@ -8,6 +8,11 @@ const Projects = () => {
   const [isDemoHovered, setIsDemoHovered] = useState(false);
   const [isGithubHovered, setIsGithubHovered] = useState(false);
 
+  const badges = {
+    SubTube: "🥈",
+    ExploreX: "🥉",
+  };
+
   return (
     <Layout paddingTop="pt-50">
       <SectionHeader header="Projects" />
@@ -29,13 +34,9 @@ const Projects = () => {
           />
           <div className="flex justify-center items-center mb-10 sm:mb-15">
             <div className="flex-1 text-2xl md:text-3xl font-mont font-semibold">
-              {project.title === "ExploreX" ? (
-                <>
-                  {project.title}
-                  <span className="hidden sm:inline">🥉</span>
-                </>
-              ) : (
-                project.title
+              {project.title}
+              {badges[project.title] && (
+                <span className="hidden sm:inline">{badges[project.title]}</span>
               )}
             </div>
             <div className="flex justify-end lg:pr-5 gap-x-2 lg:gap-x-7 text-sm sm:text-lg lg:text-xl font-sf-mono text-[#64FFDA]">

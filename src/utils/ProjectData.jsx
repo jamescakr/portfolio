@@ -2,10 +2,33 @@ import ExploreX from "../assets/ExploreX-demo.gif";
 import ExploreXImg from "../assets/ExploreX-image.png";
 import Movify from "../assets/Movify-demo.gif";
 import MovifyImg from "../assets/Movify-image.png";
-import lululime from "../assets/lululime-demo.gif";
-import lululimeImg from "../assets/lululime-image.png";
+import SubTube from "../assets/SubTube-demo.gif";
+import SubTubeImg from "../assets/SubTube-image.png";
 
 export const projects = [
+  {
+    img: SubTubeImg,
+    video: SubTube,
+    demo: "https://better-tmr.netlify.app/",
+    github: "https://github.com/Better-Tmr/SubTube-fe",
+    title: "SubTube",
+    description:
+      "An award-winning web app that placed 2nd out of 10 teams in a one-week hackathon, built to help Korean learners study English using YouTube videos. I led the team as Product Owner, creating the app’s design in Figma and contributing directly to the overall UI/UX design as well as the recommendation page with filtering and pagination features. The project was featured in a YouTube video by a Korean developer & coding instructor, which included my presentation. ",
+    skills: [
+      "React",
+      "React Query",
+      "Tailwind CSS",
+      "Figma",
+      "Sanity",
+      "Postman",
+      "Vercel",
+    ],
+    api: [
+      "Youtube Data API v3",
+      "Google Cloud Translation API",
+      "Free Dictionary API",
+    ],
+  },
   {
     img: MovifyImg,
     video: Movify,
@@ -27,9 +50,7 @@ export const projects = [
     github: "https://github.com/ExploreX-App/ExploreX?tab=readme-ov-file",
     title: "ExploreX",
     description: [
-      "A hotel and activity booking platform built during a one-week team competition. I led the team as Scrum Master, managing workflow and coordinating via GitHub Projects and Slack.",
-      "Our team placed 3rd out of 10 teams, and the project was featured in a YouTube video by a Korean developer & coding instructor. This success was especially meaningful because I applied lessons from my first team project,",
-      "Want Some Coffee, where we overlooked deployment planning due to an overly ambitious scope within a tight one-week deadline, resulting in a rushed and failed deployment.",
+      "An award-winning hotel and activity booking platform that placed 3rd out of 10 teams in a one-week hackathon. As Scrum Master, I guided the team’s workflow using Agile practices and GitHub Projects, ensuring smooth collaboration and on-time progress. Beyond team coordination, I contributed directly to the activity exploration page, building filtering and booking functionality that tested well with users. The project was later featured in a YouTube video by a Korean developer & coding instructor.",
     ],
     skills: [
       "React",
@@ -42,16 +63,5 @@ export const projects = [
     ],
     api: ["Google Maps API", "Amadeus API", "Booking.com API", "Stripe API"],
     link: "https://www.youtube.com/watch?v=BMPvdcDjtOI&t=24m50s",
-  },
-  {
-    img: lululimeImg,
-    video: lululime,
-    demo: "https://james-lululime.netlify.app/",
-    github: "https://github.com/jamescakr/lululime",
-    title: "Lululime",
-    description:
-      "A mock e-commerce layout built with React and Tailwind CSS. Focused on creating a responsive, clean UI with category filtering and dynamic product listing using mock data. Emphasized practicing component-based structure and styling. ",
-    skills: ["React", "Tailwind CSS", "Netlify"],
-    api: ["Mock Data"],
   },
 ];
