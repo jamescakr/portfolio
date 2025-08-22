@@ -34,6 +34,7 @@ export const projects = [
       "Google Cloud Translation API",
       "Free Dictionary API",
     ],
+    link: "https://www.youtube.com/watch?v=vzMEUJ2XpNo&t=440s",
   },
   {
     img: ExploreXImg,

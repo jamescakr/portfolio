@@ -37,7 +37,7 @@ export const experiences = [
     subtitle: "Hotel & Activity Booking Platform",
     date: "SEP 2024",
     description:
-      "Led the project as Scrum Master in a team of five. Achieved 3rd place in a competition with a travel booking platform integrating multiple APIs. Built the activity exploration page with responsive UI using React, Bootstrap, and CSS, supporting sorting and pagination.",
+      "Led the project as Scrum Master in a team of five. Achieved 3rd place in a one-week hackathon with a travel booking platform integrating multiple APIs. Built the activity exploration page with responsive UI using React, Bootstrap, and CSS, supporting sorting and pagination.",
     side: "left",
     icon: "award",
   },
@@ -58,7 +58,7 @@ export const experiences = [
     subtitle: "Task & Time Management Web App",
     date: "JAN 2025",
     description:
-      "Participated in the KATEC Hackathon as a Frontend Developer, where I developed the task input UI, implemented a dynamic pie chart visualization for tracking task completion, and collaborated closely with Python backend developers to ensure smooth API integration.",
+      "Participated in the Hackathon as a Frontend Developer, where I developed the task input UI, implemented a dynamic pie chart visualization for tracking task completion, and collaborated closely with Python backend developers to ensure smooth API integration.",
     side: "left",
     icon: "team",
   },
@@ -71,5 +71,16 @@ export const experiences = [
       "A personal portfolio built to highlight my branding and development journey, fully responsive across all devices. Developed as a single-page scroll experience using React, Tailwind CSS, Framer Motion, and deployed with Netlify, supporting contact features via Formspree.",
     side: "right",
     icon: "solo",
+  },
+  {
+    highlight: "Team",
+    highlight2: "2nd Awarded",
+    title: "SubTube",
+    subtitle: "English Learning Web App with Real-Time Subtitles",
+    date: "APR 2025",
+    description:
+      "Led the project as Product Owner in a team of five. Achieved 2nd place in a one-week hackathon, where I designed the app in Figma and built the overall UI/UX with React and Tailwind CSS. Developed the recommendation page with filtering and pagination",
+    side: "left",
+    icon: "award",
   },
 ];
