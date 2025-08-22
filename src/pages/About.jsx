@@ -32,9 +32,10 @@ const About = () => {
       <div id="about" className="grid grid-cols-1 lg:grid-cols-10">
         <div className="lg:col-span-6 text-lg md:text-xl lg:text-2xl font-lato font-light text-[#C0C0C0] md:ml-3 md:mr-3 order-2 lg:order-1">
           <p className="pb-5">
-            I'm a <span className=" text-white">full-stack developer</span> who
-            strives to build well-structured applications while continuously learning
-            best practices for performance and scalability.
+            I'm a <span className=" text-white"> frontend developer</span> with a
+            strong understanding of backend systems, striving to build
+            well-structured applications while continuously learning best practices
+            for performance and scalability.
           </p>
           <p className="pb-5">
             Earlier in my career, I served as a{" "}
@@ -56,7 +57,7 @@ const About = () => {
           <p className="pb-5">
             Throughout my development journey, I’ve taken on{" "}
             <span className="text-[#64FFDA] font-normal">
-              Scrum Master roles in team projects
+              Product Owner and Scrum Master roles in team projects
             </span>
             <span className="text-white">
               , leading teams and optimizing workflows in agile environments
